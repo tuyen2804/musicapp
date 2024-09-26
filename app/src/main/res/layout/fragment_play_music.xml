@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/linear"
+    android:gravity="center"
+    android:padding="12dp"
+    tools:context=".PlayMusicFragment">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:id="@+id/imgAnim"
+        android:background="@drawable/ic_anim"/>
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:id="@+id/seekbarTime"
+        android:progress="100"
+        android:layout_marginTop="40dp"
+        android:progressDrawable="@drawable/sb_progress"
+        android:splitTrack="false"
+        android:thumb="@drawable/sb_thumb" />
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnPlayMusic"
+        android:layout_margin="8dp"
+        android:background="@drawable/ic_startms"/>
+
+</LinearLayout>
